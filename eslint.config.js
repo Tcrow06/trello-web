@@ -22,8 +22,54 @@ export default defineConfig([
         sourceType: 'module',
       },
     },
+    
+    plugins: {
+      react: pluginReact,
+      'react-hooks': reactHooks,
+      'react-refresh': reactRefresh,
+    },
+    settings: {
+      react: {
+        version: '18.2',
+      },
+    },
     rules: {
-      'no-unused-vars': ['error', { varsIgnorePattern: '^[A-Z_]' }],
+       // React refresh
+      'react-refresh/only-export-components': 'warn',
+
+      // React hooks
+      'react-hooks/rules-of-hooks': 'error',
+      'react-hooks/exhaustive-deps': 'warn',
+
+      // React core rules
+      'react/prop-types': 'off',
+      'react/display-name': 'off',
+
+      // General JS rules
+      'no-console': 'warn',
+      'no-lonely-if': 'warn',
+      'no-unused-vars': 'warn',
+      'no-trailing-spaces': 'warn',
+      'no-multi-spaces': 'warn',
+      'no-multiple-empty-lines': 'warn',
+      'space-before-blocks': ['error', 'always'],
+      'object-curly-spacing': ['warn', 'always'],
+      indent: ['warn', 2],
+      semi: ['warn', 'never'],
+      quotes: ['error', 'single'],
+      'array-bracket-spacing': 'warn',
+      'linebreak-style': 'off',
+      'no-unexpected-multiline': 'warn',
+      'keyword-spacing': 'warn',
+      'comma-dangle': 'warn',
+      'comma-spacing': 'warn',
+      'arrow-spacing': 'warn',  
+      'no-restricted-imports': [
+        'error',
+        {
+          'patterns': [{ 'regex': '^@mui/[^/]+$' }]
+        }
+      ]
     },
   },
 ])
