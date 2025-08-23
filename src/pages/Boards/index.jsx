@@ -1,0 +1,1 @@
+// Kiểu 1 người có nhiều board thì hiện list các board
