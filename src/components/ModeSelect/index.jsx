@@ -1,6 +1,3 @@
-import Button from '@mui/material/Button'
-import HomeIcon from '@mui/icons-material/Home'
-import { pink } from '@mui/material/colors'
 import {
   useColorScheme
 } from '@mui/material/styles'
