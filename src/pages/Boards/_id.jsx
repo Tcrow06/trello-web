@@ -5,7 +5,7 @@ import BoardContent from './BoardContent';
 import AppBar from '~/components/AppBar';
 function Board() {
     return (
-        <Container disableGutters maxWidth='false' sx={{height:'100vh', bgcolor: '#cfe8fc'}}>      
+        <Container disableGutters maxWidth='false' sx={(theme) => ({height:'100vh', bgcolor: theme.palette.background.default})}>      
             <AppBar/>
             <BoardBar />
             <BoardContent/>
