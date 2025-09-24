@@ -1,3 +1,4 @@
+
 import Box from "@mui/material/Box";
 import Chip from '@mui/material/Chip';
 import DashboardIcon from '@mui/icons-material/Dashboard';
@@ -36,7 +37,6 @@ function BoardBar({child}) {
             gap: 2,
             overflowX: 'auto',
             bgcolor: (theme) => (theme.palette.mode ==='dark' ? '#34495e' : '#1976d2'),
-            borderBottom: '1px solid white',
             px: 2
 
         }}>
@@ -92,7 +92,10 @@ function BoardBar({child}) {
                             width: 34,
                             height: 34,
                             font: 16,
-                            border: 'none'
+                            border: 'none',
+                            color: 'white',
+                            cursor: 'pointer',
+                            '&;first-of-type': {bgcolor:'#a4b0be' }
                         }
                     }}
                     max={7}

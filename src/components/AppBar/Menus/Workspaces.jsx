@@ -3,8 +3,6 @@ import Box from "@mui/material/Box";
 import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import Divider from '@mui/material/Divider';
-import Paper from '@mui/material/Paper';
-import MenuList from '@mui/material/MenuList';
 import MenuItem from '@mui/material/MenuItem';
 import ListItemText from '@mui/material/ListItemText';
 import ListItemIcon from '@mui/material/ListItemIcon';
@@ -56,8 +54,8 @@ function Workspaces() {
                     <Typography variant="body2" color="text.secondary">
                         ⌘X
                     </Typography>
-                    </MenuItem>
-                    <MenuItem>
+                </MenuItem>
+                <MenuItem>
                     <ListItemIcon>
                         <ContentCopy fontSize="small" />
                     </ListItemIcon>
@@ -65,8 +63,8 @@ function Workspaces() {
                     <Typography variant="body2" color="text.secondary">
                         ⌘C
                     </Typography>
-                    </MenuItem>
-                    <MenuItem>
+                </MenuItem>
+                <MenuItem>
                     <ListItemIcon>
                         <ContentPaste fontSize="small" />
                     </ListItemIcon>
@@ -74,14 +72,14 @@ function Workspaces() {
                     <Typography variant="body2" color="text.secondary">
                         ⌘V
                     </Typography>
-                    </MenuItem>
+                </MenuItem>
                     <Divider />
-                    <MenuItem>
+                <MenuItem>
                     <ListItemIcon>
                         <Cloud fontSize="small" />
                     </ListItemIcon>
                     <ListItemText>Web Clipboard</ListItemText>
-                    </MenuItem>
+                </MenuItem>
             </Menu>
         </Box> 
     );
