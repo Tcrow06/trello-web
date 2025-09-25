@@ -24,8 +24,11 @@ import GroupIcon from '@mui/icons-material/Group';
 import CommentIcon from '@mui/icons-material/Comment';
 import AttachmentIcon from '@mui/icons-material/Attachment';
 import ListCard from "./ListCards/ListCards";
+import { mapOrder } from "~/utils/sort";
 
-function Column() {
+function Column( {column} ) {
+
+    const orderCards = mapOrder(column?.cards, column?.cardOrderIds, '_id');
 
     const [anchorEl, setAnchorEl] = useState(null);
     const open = Boolean(anchorEl);
@@ -56,7 +59,7 @@ function Column() {
                     fontWeight: 'bold',
                     cursor: 'pointer'
                 }}>
-                    Column title
+                    {column.title}
                 </Typography>
                 <Box>
                     <Tooltip title="More option">
@@ -124,7 +127,7 @@ function Column() {
                 </Box> 
             </Box>
             {/* Box List card*/}
-            <ListCard/>
+            <ListCard cards={orderCards}/>
 
             {/* Box column Footer*/}
             <Box sx={{
