@@ -1,12 +1,74 @@
-# React + Vite
+# 🚀 Trello Web – MERN Stack Clone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-featured Trello-style task management application built with the MERN Stack (MongoDB, Express.js, React.js, Node.js). Developed by **Luong Quang Thinh**, this project helps learners master both frontend and backend development through hands-on, real-world practice.
 
-Currently, two official plugins are available:
+> This project is part of the **Full Stack MERN Pro** learning series on YouTube, focusing on practical, project-based learning.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 📘 Project Overview
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+This application replicates many core features of the original Trello:
+
+- Create and manage boards
+- Add / edit / delete columns
+- Drag-and-drop cards (powered by **DnD Kit**)
+- User and member management
+- Clean, modern UI inspired by Trello
+- Scalable backend architecture following industry best practices
+
+The frontend is built with **React + Vite** for ultra-fast development, styled with **Material UI** for a polished and responsive interface.  
+The backend uses **Express.js + MongoDB**, complete with RESTful APIs and **JWT authentication**.
+
+---
+
+## 🧰 Tech Stack
+
+### 🖥️ Frontend
+- React.js 18+
+- Vite
+- Material UI (MUI)
+- Redux Toolkit
+- React DnD Kit
+- React Router DOM
+- Axios
+- ESLint
+
+### 🗄️ Backend
+- Node.js
+- Express.js
+- MongoDB & Mongoose
+- JWT Authentication
+- REST APIs
+
+---
+
+## ⚙️ Setup & Installation
+
+### 🔧 Run Backend Locally
+
+Requirements: Node.js, Yarn, MongoDB
+
+```sh
+cd api
+yarn install
+yarn dev
+
+```
+Backend runs on: http://localhost:8017
+
+### 💻 Run Frontend Locally
+
+To run the frontend of this project locally, use the following commands:
+
+```bash
+cd web
+
+yarn install
+
+yarn dev
+```
+Frontend runs on: http://localhost:8173
+
+### Giao diện
+![FE](./images/fe.png)
